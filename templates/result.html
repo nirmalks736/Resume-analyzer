@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>Possible Job Categories:</h1>
+    <ul>
+        {% for category in categories %}
+            <li>{{ category }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Extracted Resume Text:</h3>
+    <p>{{ resume_text }}</p>
+    
+    <a href="/">Go Back</a>
+</body>
+</html>
